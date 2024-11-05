@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Usuarios</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { margin-bottom: 20px; }
+        .user-list { margin-top: 20px; }
+        .user-item { margin-bottom: 10px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Gestor de Usuarios</h1>
+    
+    <form id="userForm">
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="text" id="apellido" placeholder="Apellido" required />
+        <input type="email" id="correo" placeholder="Correo" required />
+        <input type="number" id="edad" placeholder="Edad" required />
+        <button type="submit">Agregar Usuario</button>
+    </form>
+    
+    <div class="user-list" id="userList"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
